@@ -1,16 +1,16 @@
 import React, { useContext } from "react";
-import { TiDelete } from "react-icons/ti";
+
 import { AppContext } from "../context/AppContext";
 
 const ExpenseItem = (props) => {
   const { dispatch, currency } = useContext(AppContext);
 
-  const handleDeleteExpense = () => {
-    dispatch({
-      type: "DELETE_EXPENSE",
-      payload: props.id,
-    });
-  };
+  // const handleDeleteExpense = () => {
+  //   dispatch({
+  //     type: "DELETE_EXPENSE",
+  //     payload: props.id,
+  //   });
+  // };
 
   const decreaseAllocation = (name) => {
     const expense = {
